@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Викторина: Тела и вещества</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="znayko.png" alt="Знайко" class="znayko-img">
+            <div class="score">Точки: <span id="score">0</span></div>
+        </div>
+        <div class="quiz-container">
+            <div id="question">Въпросът ще се появи тук</div>
+            <div class="answers">
+                <button class="answer" onclick="checkAnswer(0)">Отговор 1</button>
+                <button class="answer" onclick="checkAnswer(1)">Отговор 2</button>
+                <button class="answer" onclick="checkAnswer(2)">Отговор 3</button>
+            </div>
+            <button id="next-btn" onclick="nextQuestion()" class="hidden">Следващ въпрос</button>
+        </div>
+        <div id="result" class="hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
